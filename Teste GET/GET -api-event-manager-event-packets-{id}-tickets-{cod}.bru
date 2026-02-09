@@ -1,0 +1,16 @@
+meta {
+  name: GET /api/event-manager/event-packets/{id}/tickets/{cod}
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://127.0.0.1:8000/api/event-manager/event-packets/1/tickets/VIP-001
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,31 @@
+meta {
+  name: POST /api/event-manager/events
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/api/event-manager/events
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im93bmVyMUBleGFtcGxlLmNvbSIsInJvbCI6Im93bmVyLWV2ZW50IiwiZXhwIjoxNzY1OTU1NzMyfQ.OaOF0mnlbnjSMUY1RmXL3YmXs9kv4aBMBX5ilgbNROM
+}
+
+body:json {
+  {
+    "ID":2,
+      "ID_OWNER": 2,
+      "nume": "Owner 1 Nameday",
+      "locatie": "Owner 1's house",
+      "descriere": "metal",
+      "numarLocuri": 50
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: DELETE /api/event-manager/tickets
+  type: http
+  seq: 2
+}
+
+delete {
+  url: http://127.0.0.1:8000/api/event-manager/tickets/VIP-001
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

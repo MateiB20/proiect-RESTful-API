@@ -1,0 +1,30 @@
+meta {
+  name: PUT /api/event-manager/clients
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://127.0.0.1:8001/api/event-manager/clients
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwicm9sIjoiYWRtaW4iLCJleHAiOjE3NjY3Njk0Mjh9.UzdCkoFc2hMUWO-NzEnoKWAEzhDer4OfHvl--WcuQv8
+}
+
+body:json {
+  {
+    "_id": "0",
+        "email": "owner1@example.com",
+        "prenume_nume":{"value": "Owner Unu", "public":true},
+        "social_media_links": [{"public":true, "link":"instagram.com/owner1"}, {"public":true, "link":"x.com/owner1"}],
+        "lista_bilete": ["VIP-001", "VIP-002"]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

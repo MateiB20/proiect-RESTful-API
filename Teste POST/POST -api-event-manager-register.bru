@@ -1,0 +1,29 @@
+meta {
+  name: POST /api/event-manager/register
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://127.0.0.1:8000/api/event-manager/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  /*{
+    "email": "admin@example.com",
+    "parola": "abcdefg",
+    "rol": "admin"
+  }*/
+  {
+    "email": "a@example.com",
+    "parola": "abcdefg",
+    "rol": "owner-event"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,5 @@
+.env
+db/mongodb.conf
+db/mongo-init.js
+
+.venv

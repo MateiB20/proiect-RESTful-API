@@ -1,0 +1,31 @@
+meta {
+  name: PUT /api/event-manager/events
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://127.0.0.1:8000/api/event-manager/events
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im93bmVydUBleGFtcGxlLmNvbSIsInJvbCI6Im93bmVyLWV2ZW50IiwiZXhwIjoxNzY0NzQ2MzA4fQ.viO0qQmzqopxkZNnq7QSgOL1IGQs9ovGLAe77UtQJlU
+}
+
+body:json {
+  {
+    "ID":6,
+      "ID_OWNER": 2,
+      "nume": "Jazz Night",
+      "locatie": "Golden Circle",
+      "descriere": "jazz",
+      "numarLocuri": 50
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

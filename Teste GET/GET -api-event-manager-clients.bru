@@ -1,0 +1,20 @@
+meta {
+  name: GET /api/event-manager/clients
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://127.0.0.1:8001/api/event-manager/clients
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWludUBleGFtcGxlLmNvbSIsInJvbCI6ImFkbWluIiwiZXhwIjoxNzY1MzA0NTI2fQ.N_VnnLQ6FFFLRyvLU0zGwWdUqZ_1ibmkEG-ubadd_EA
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

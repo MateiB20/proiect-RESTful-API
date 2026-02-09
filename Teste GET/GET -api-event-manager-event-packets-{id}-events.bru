@@ -1,0 +1,16 @@
+meta {
+  name: GET /api/event-manager/event-packets/{id}/events
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://127.0.0.1:8000/api/event-manager/event-packets/1/events
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+package idm;
+message LoginRequest {
+  string email = 1;
+  string parola = 2;
+  string rol = 3;
+}
+message LoginResponse {
+  bool success = 1;
+  string token = 2;
+  string error = 3;
+}
+message RegisterRequest {
+  string email = 1;
+  string parola = 2;
+  string rol = 3;
+}
+message RegisterResponse {
+  bool success = 1;
+  string token = 2;
+  string error = 3;
+}
+service IDMService {
+  rpc Login(LoginRequest) returns (LoginResponse);
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+}

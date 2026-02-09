@@ -1,0 +1,28 @@
+meta {
+  name: PUT /api/event-manager/client/{id}/tickets
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://127.0.0.1:8000/api/event-manager/client/1/tickets
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer 
+}
+
+body:json {
+  {
+        "COD": "VIP-001",
+        "PachetID": 1,
+        "EvenimentID": 1
+      }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

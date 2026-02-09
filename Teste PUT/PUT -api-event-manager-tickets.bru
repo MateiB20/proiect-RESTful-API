@@ -1,0 +1,28 @@
+meta {
+  name: PUT /api/event-manager/tickets
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://127.0.0.1:8000/api/event-manager/tickets
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im93bmVydUBleGFtcGxlLmNvbSIsInJvbCI6Im93bmVyLWV2ZW50IiwiZXhwIjoxNzY0Njk1MjcwfQ.FCRJXsOcXhH6dok9ArLBkr-IjFZu9CGgT6tL1bISnkM
+}
+
+body:json {
+  {
+        "COD": "B1003",
+        "PachetID": 3,
+        "EvenimentID": 6
+      }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

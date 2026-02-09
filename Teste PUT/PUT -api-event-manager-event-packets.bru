@@ -1,0 +1,32 @@
+meta {
+  name: PUT /api/event-manager/event-packets
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://127.0.0.1:8000/api/event-manager/event-packets
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im93bmVydTJAZXhhbXBsZS5jb20iLCJyb2wiOiJvd25lci1ldmVudCIsImV4cCI6MTc2NDY5NDgyNX0.stI8q1EudR268BPxKfKwmHsgsillkfL2zoiQhMHC-S4
+}
+
+body:json {
+  {
+    "ID":3,
+    "ID_OWNER": 4,
+    "nume": "Jazz Hits Combo",
+    "locatie": "Golden Circle",
+    "descriere": "Acces la afterparty",
+    "numarLocuri": 80
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

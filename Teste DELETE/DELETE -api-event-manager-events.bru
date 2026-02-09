@@ -1,0 +1,24 @@
+meta {
+  name: DELETE /api/event-manager/events
+  type: http
+  seq: 1
+}
+
+delete {
+  url: http://127.0.0.1:8000/api/event-manager/events?name="Owner 1"
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: "Owner 1"
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im93bmVyMUBleGFtcGxlLmNvbSIsInJvbCI6Im93bmVyLWV2ZW50IiwiZXhwIjoxNzY2NDI1MTEzfQ.LehJyuWa1u-uFDXZIGxcMIJf4d24_Cn2xn52csINfLQ
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

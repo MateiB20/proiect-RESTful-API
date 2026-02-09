@@ -1,0 +1,34 @@
+meta {
+  name: POST /api/event-manager/event-packets
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:8000/api/event-manager/event-packets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  /*{
+    "ID_OWNER": 2,
+        "nume": "Owner 1 Birthday",
+        "locatie": "Owner 1's house",
+        "descriere": "jazz",
+        "numarLocuri": 50
+  }*/
+  
+  {
+        "ID_OWNER": 2,
+        "nume": "Owner 1 Birthday VIP",
+        "locatie": "Owner 1's house",
+        "descriere": "Acces la afterparty",
+      "numarLocuri": 25
+      }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

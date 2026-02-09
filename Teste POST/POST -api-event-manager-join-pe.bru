@@ -1,0 +1,24 @@
+meta {
+  name: POST /api/event-manager/join-pe
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:8000/api/event-manager/join-pe
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+        "EvenimentID": 1,
+        "PachetID": 1,
+        "numarLocuri":100
+      }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
